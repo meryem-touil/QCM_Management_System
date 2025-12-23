@@ -78,8 +78,10 @@
     <Compile Include="Models\Question.cs" />
     <Compile Include="Models\Result.cs" />
     <Compile Include="Models\User.cs" />
+    <Compile Include="Models\UserResponses .cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utils\SessionManager.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -113,8 +115,6 @@
     <Content Include="Database\create_database.sql" />
     <Content Include="Database\create_tables.sql" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Utils\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,14 +1,8 @@
 ﻿using QCM_Management_System.Models;
+using QCM_Management_System.Utils;
 using QCM_ManagementSystem.DataAccess;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Data.SqlClient;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace QCM_Management_System
@@ -36,11 +30,27 @@ namespace QCM_Management_System
 
             if (user != null)
             {
+                // Enregistrer l'utilisateur dans la session
+                SessionManager.Login(user);
+
                 MessageBox.Show($"Welcome {user.FullName}!", "Success",
                     MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                // TODO: Open Admin or User Dashboard based on role
-                // We'll create these forms next
+                // Redirection selon le rôle
+                if (user.Role == "Admin")
+                {
+                    // TODO: Créer AdminDashboard
+                    MessageBox.Show("Admin Dashboard - Coming soon!", "Info");
+                    // AdminDashboard adminForm = new AdminDashboard();
+                    // adminForm.Show();
+                }
+                else if (user.Role == "User")
+                {
+                    // TODO: Créer UserDashboard
+                    MessageBox.Show("User Dashboard - Coming soon!", "Info");
+                    // UserDashboard userForm = new UserDashboard();
+                    // userForm.Show();
+                }
 
                 this.Hide();
             }
@@ -58,7 +68,7 @@ namespace QCM_Management_System
                 using (SqlConnection conn = DatabaseHelper.GetConnection())
                 {
                     conn.Open();
-                    string query = "SELECT IdUser, Username, FullName, Role FROM Users WHERE Username = @Username AND PasswordHash = @Password";
+                    string query = "SELECT IdUser, Username, FullName, Role, CreatedAt FROM Users WHERE Username = @Username AND PasswordHash = @Password";
 
                     using (SqlCommand cmd = new SqlCommand(query, conn))
                     {
@@ -74,7 +84,8 @@ namespace QCM_Management_System
                                     IdUser = (int)reader["IdUser"],
                                     Username = reader["Username"].ToString(),
                                     FullName = reader["FullName"].ToString(),
-                                    Role = reader["Role"].ToString()
+                                    Role = reader["Role"].ToString(),
+                                    CreatedAt = (DateTime)reader["CreatedAt"]
                                 };
                             }
                         }
@@ -92,12 +103,10 @@ namespace QCM_Management_System
 
         private void label1_Click(object sender, EventArgs e)
         {
-
         }
 
         private void label2_Click(object sender, EventArgs e)
         {
-
         }
     }
 }

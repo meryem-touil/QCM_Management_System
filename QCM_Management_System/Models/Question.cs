@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace QCM_Management_System.Models
 {
-    internal class Question
+    public class Question
     {
+        public int IdQuestion { get; set; }
+        public string QuestionText { get; set; }
+        public int IdQCM { get; set; }
+        public int? OrderNumber { get; set; }
     }
 }

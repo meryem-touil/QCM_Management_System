@@ -6,7 +6,14 @@ using System.Threading.Tasks;
 
 namespace QCM_Management_System.Models
 {
-    internal class QCM
+    public class QCM
     {
+        public int IdQCM { get; set; }
+        public string Title { get; set; }
+        public string Description { get; set; }
+        public int Duration { get; set; }
+        public int CreatedBy { get; set; }
+        public DateTime CreatedAt { get; set; }
+        public bool IsActive { get; set; }
     }
 }
