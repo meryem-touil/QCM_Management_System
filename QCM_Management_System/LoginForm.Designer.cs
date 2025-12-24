@@ -61,25 +61,25 @@
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(174, 129);
+            this.txtPassword.Location = new System.Drawing.Point(159, 130);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
-            this.txtPassword.Size = new System.Drawing.Size(156, 22);
+            this.txtPassword.Size = new System.Drawing.Size(171, 22);
             this.txtPassword.TabIndex = 2;
             // 
             // txtUsername
             // 
-            this.txtUsername.Location = new System.Drawing.Point(174, 78);
+            this.txtUsername.Location = new System.Drawing.Point(159, 80);
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(156, 22);
+            this.txtUsername.Size = new System.Drawing.Size(171, 22);
             this.txtUsername.TabIndex = 3;
             // 
             // btnLogin
             // 
             this.btnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogin.Location = new System.Drawing.Point(174, 186);
+            this.btnLogin.Location = new System.Drawing.Point(159, 186);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(75, 23);
+            this.btnLogin.Size = new System.Drawing.Size(75, 33);
             this.btnLogin.TabIndex = 4;
             this.btnLogin.Text = "login";
             this.btnLogin.UseVisualStyleBackColor = true;
@@ -88,9 +88,9 @@
             // btnRegister
             // 
             this.btnRegister.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegister.Location = new System.Drawing.Point(255, 186);
+            this.btnRegister.Location = new System.Drawing.Point(240, 186);
             this.btnRegister.Name = "btnRegister";
-            this.btnRegister.Size = new System.Drawing.Size(75, 23);
+            this.btnRegister.Size = new System.Drawing.Size(90, 33);
             this.btnRegister.TabIndex = 5;
             this.btnRegister.Text = "s\'inscrire";
             this.btnRegister.UseVisualStyleBackColor = true;
