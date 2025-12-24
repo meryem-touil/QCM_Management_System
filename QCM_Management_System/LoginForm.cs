@@ -1,4 +1,5 @@
 ﻿using QCM_Management_System.Models;
+using QCM_Management_System.Forms;
 using QCM_Management_System.Utils;
 using QCM_ManagementSystem.DataAccess;
 using System;
@@ -107,6 +108,17 @@ namespace QCM_Management_System
 
         private void label2_Click(object sender, EventArgs e)
         {
+        }
+
+        private void btnRegister_Click(object sender, EventArgs e)
+        {
+            RegisterForm registerForm = new RegisterForm();
+            registerForm.ShowDialog();  // ShowDialog bloque le LoginForm jusqu'à la fermeture
+
+            // Optionnel : Vider les champs après l'inscription
+            txtUsername.Clear();
+            txtPassword.Clear();
+            txtUsername.Focus();
         }
     }
 }
