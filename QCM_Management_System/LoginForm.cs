@@ -40,10 +40,10 @@ namespace QCM_Management_System
                 // Redirection selon le rôle
                 if (user.Role == "Admin")
                 {
-                    // TODO: Créer AdminDashboard
-                    MessageBox.Show("Admin Dashboard - Coming soon!", "Info");
-                    // AdminDashboard adminForm = new AdminDashboard();
-                    // adminForm.Show();
+                    // Redirection vers la form AdminDashboard
+                    AdminDashboard adminForm = new AdminDashboard(user);
+                    adminForm.Show();
+                    this.Hide(); // Cache le LoginForm
                 }
                 else if (user.Role == "User")
                 {
