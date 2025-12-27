@@ -47,10 +47,9 @@ namespace QCM_Management_System
                 }
                 else if (user.Role == "User")
                 {
-                    // TODO: Créer UserDashboard
-                    MessageBox.Show("User Dashboard - Coming soon!", "Info");
-                    // UserDashboard userForm = new UserDashboard();
-                    // userForm.Show();
+                    UserDashboard userForm = new UserDashboard(user);
+                    userForm.Show();
+                    this.Hide();
                 }
 
                 this.Hide();

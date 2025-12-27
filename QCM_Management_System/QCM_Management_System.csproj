@@ -99,9 +99,25 @@
     <Compile Include="Forms\RegisterForm.Designer.cs">
       <DependentUpon>RegisterForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\ResultDetailsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ResultDetailsForm.Designer.cs">
+      <DependentUpon>ResultDetailsForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\ResultsForm.cs" />
-    <Compile Include="Forms\TakeQCMForm.cs" />
-    <Compile Include="Forms\UserDashboard.cs" />
+    <Compile Include="Forms\TakeQCMForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TakeQCMForm.Designer.cs">
+      <DependentUpon>TakeQCMForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UserDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\UserDashboard.Designer.cs">
+      <DependentUpon>UserDashboard.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\UserManagementForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -134,6 +150,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\RegisterForm.resx">
       <DependentUpon>RegisterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TakeQCMForm.resx">
+      <DependentUpon>TakeQCMForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UserDashboard.resx">
+      <DependentUpon>UserDashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ViewQuestionsForm.resx">
       <DependentUpon>ViewQuestionsForm.cs</DependentUpon>
