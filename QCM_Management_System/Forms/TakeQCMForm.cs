@@ -178,7 +178,7 @@ namespace QCM_Management_System.Forms
             SaveResultToDatabase(score, questions.Count, correctCount, results, startTime, endTime);
 
             //  Afficher un message rapide
-            MessageBox.Show($"QCM terminé!\nScore: {correctCount}/{questions.Count} ({score:F1}%)\nTemps: {totalTime:mm\\:ss}");
+            MessageBox.Show($"End QCM!\nScore: {correctCount}/{questions.Count} ({score:F1}%)\nTime: {totalTime:mm\\:ss}");
 
             //  Ouvrir le formulaire des résultats détaillés
             ResultDetailsForm resultForm = new ResultDetailsForm(questions, userAnswers, score, totalTime);

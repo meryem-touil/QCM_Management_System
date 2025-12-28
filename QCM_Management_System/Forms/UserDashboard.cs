@@ -404,6 +404,7 @@ namespace QCM_Management_System.Forms
                 MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             LoginForm loginForm = new LoginForm();
+            loginForm.Show();
             this.Close();
         }
 

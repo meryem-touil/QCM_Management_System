@@ -31,7 +31,7 @@
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(250, 37);
             this.lblTitle.TabIndex = 0;
-            this.lblTitle.Text = "Résultats Détaillés";
+            this.lblTitle.Text = "Detailed Results";
             // 
             // lblSummary
             // 
@@ -78,7 +78,7 @@
             this.Controls.Add(this.lblTitle);
             this.Name = "ResultDetailsForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Résultats du QCM";
+            this.Text = "QCM Results";
             this.Load += new System.EventHandler(this.ResultDetailsForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

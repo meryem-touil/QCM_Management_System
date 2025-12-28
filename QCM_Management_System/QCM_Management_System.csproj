@@ -86,7 +86,6 @@
     <Compile Include="Forms\EditQuestionForm.Designer.cs">
       <DependentUpon>EditQuestionForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\LoginForm.cs" />
     <Compile Include="Forms\ManageQCMForm.cs">
       <SubType>Form</SubType>
     </Compile>
