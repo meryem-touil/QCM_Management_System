@@ -3,6 +3,7 @@
     partial class AdminDashboard
     {
         private System.ComponentModel.IContainer components = null;
+        private System.Windows.Forms.Button btnViewResults;
 
         protected override void Dispose(bool disposing)
         {
@@ -24,6 +25,7 @@
             this.btnLogout = new System.Windows.Forms.Button();
             this.btnCreateQCM = new System.Windows.Forms.Button();
             this.btnManageUsers = new System.Windows.Forms.Button();
+            this.btnViewResults = new System.Windows.Forms.Button();
             this.pnlFooter = new System.Windows.Forms.Panel();
             this.lblFooter = new System.Windows.Forms.Label();
             this.pnlHeader.SuspendLayout();
@@ -38,8 +40,9 @@
             this.pnlHeader.Controls.Add(this.lblTitle);
             this.pnlHeader.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlHeader.Location = new System.Drawing.Point(0, 0);
+            this.pnlHeader.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pnlHeader.Name = "pnlHeader";
-            this.pnlHeader.Size = new System.Drawing.Size(800, 100);
+            this.pnlHeader.Size = new System.Drawing.Size(1067, 123);
             this.pnlHeader.TabIndex = 0;
             // 
             // lblWelcome
@@ -47,9 +50,10 @@
             this.lblWelcome.AutoSize = true;
             this.lblWelcome.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblWelcome.ForeColor = System.Drawing.Color.White;
-            this.lblWelcome.Location = new System.Drawing.Point(30, 60);
+            this.lblWelcome.Location = new System.Drawing.Point(40, 74);
+            this.lblWelcome.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblWelcome.Name = "lblWelcome";
-            this.lblWelcome.Size = new System.Drawing.Size(180, 21);
+            this.lblWelcome.Size = new System.Drawing.Size(229, 28);
             this.lblWelcome.TabIndex = 1;
             this.lblWelcome.Text = "Welcome Admin: [Name]";
             // 
@@ -58,9 +62,10 @@
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.ForeColor = System.Drawing.Color.White;
-            this.lblTitle.Location = new System.Drawing.Point(25, 15);
+            this.lblTitle.Location = new System.Drawing.Point(33, 18);
+            this.lblTitle.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(290, 37);
+            this.lblTitle.Size = new System.Drawing.Size(309, 46);
             this.lblTitle.TabIndex = 0;
             this.lblTitle.Text = "Admin Dashboard";
             // 
@@ -70,10 +75,12 @@
             this.pnlMenu.Controls.Add(this.btnLogout);
             this.pnlMenu.Controls.Add(this.btnCreateQCM);
             this.pnlMenu.Controls.Add(this.btnManageUsers);
+            this.pnlMenu.Controls.Add(this.btnViewResults);
             this.pnlMenu.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlMenu.Location = new System.Drawing.Point(0, 100);
+            this.pnlMenu.Location = new System.Drawing.Point(0, 123);
+            this.pnlMenu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pnlMenu.Name = "pnlMenu";
-            this.pnlMenu.Size = new System.Drawing.Size(800, 400);
+            this.pnlMenu.Size = new System.Drawing.Size(1067, 492);
             this.pnlMenu.TabIndex = 1;
             // 
             // btnLogout
@@ -84,9 +91,10 @@
             this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogout.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogout.ForeColor = System.Drawing.Color.White;
-            this.btnLogout.Location = new System.Drawing.Point(300, 280);
+            this.btnLogout.Location = new System.Drawing.Point(400, 330);
+            this.btnLogout.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Size = new System.Drawing.Size(200, 60);
+            this.btnLogout.Size = new System.Drawing.Size(267, 74);
             this.btnLogout.TabIndex = 2;
             this.btnLogout.Text = "🚪 Logout";
             this.btnLogout.UseVisualStyleBackColor = false;
@@ -100,9 +108,10 @@
             this.btnCreateQCM.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCreateQCM.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCreateQCM.ForeColor = System.Drawing.Color.White;
-            this.btnCreateQCM.Location = new System.Drawing.Point(300, 170);
+            this.btnCreateQCM.Location = new System.Drawing.Point(400, 145);
+            this.btnCreateQCM.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCreateQCM.Name = "btnCreateQCM";
-            this.btnCreateQCM.Size = new System.Drawing.Size(200, 60);
+            this.btnCreateQCM.Size = new System.Drawing.Size(267, 74);
             this.btnCreateQCM.TabIndex = 1;
             this.btnCreateQCM.Text = "📝 Create QCM";
             this.btnCreateQCM.UseVisualStyleBackColor = false;
@@ -116,22 +125,41 @@
             this.btnManageUsers.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnManageUsers.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnManageUsers.ForeColor = System.Drawing.Color.White;
-            this.btnManageUsers.Location = new System.Drawing.Point(300, 60);
+            this.btnManageUsers.Location = new System.Drawing.Point(400, 53);
+            this.btnManageUsers.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnManageUsers.Name = "btnManageUsers";
-            this.btnManageUsers.Size = new System.Drawing.Size(200, 60);
+            this.btnManageUsers.Size = new System.Drawing.Size(267, 74);
             this.btnManageUsers.TabIndex = 0;
             this.btnManageUsers.Text = "👥 Manage Users";
             this.btnManageUsers.UseVisualStyleBackColor = false;
             this.btnManageUsers.Click += new System.EventHandler(this.btnManageUsers_Click);
+            // 
+            // btnViewResults
+            // 
+            this.btnViewResults.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(89)))), ((int)(((byte)(182)))));
+            this.btnViewResults.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnViewResults.FlatAppearance.BorderSize = 0;
+            this.btnViewResults.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnViewResults.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnViewResults.ForeColor = System.Drawing.Color.White;
+            this.btnViewResults.Location = new System.Drawing.Point(400, 238);
+            this.btnViewResults.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnViewResults.Name = "btnViewResults";
+            this.btnViewResults.Size = new System.Drawing.Size(267, 74);
+            this.btnViewResults.TabIndex = 3;
+            this.btnViewResults.Text = "📊 View Results";
+            this.btnViewResults.UseVisualStyleBackColor = false;
+            this.btnViewResults.Click += new System.EventHandler(this.btnViewResults_Click);
             // 
             // pnlFooter
             // 
             this.pnlFooter.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(44)))), ((int)(((byte)(62)))), ((int)(((byte)(80)))));
             this.pnlFooter.Controls.Add(this.lblFooter);
             this.pnlFooter.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlFooter.Location = new System.Drawing.Point(0, 500);
+            this.pnlFooter.Location = new System.Drawing.Point(0, 615);
+            this.pnlFooter.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pnlFooter.Name = "pnlFooter";
-            this.pnlFooter.Size = new System.Drawing.Size(800, 50);
+            this.pnlFooter.Size = new System.Drawing.Size(1067, 62);
             this.pnlFooter.TabIndex = 2;
             // 
             // lblFooter
@@ -140,21 +168,23 @@
             this.lblFooter.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFooter.ForeColor = System.Drawing.Color.White;
             this.lblFooter.Location = new System.Drawing.Point(0, 0);
+            this.lblFooter.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblFooter.Name = "lblFooter";
-            this.lblFooter.Size = new System.Drawing.Size(800, 50);
+            this.lblFooter.Size = new System.Drawing.Size(1067, 62);
             this.lblFooter.TabIndex = 0;
             this.lblFooter.Text = "© 2024 QCM Management System - Team Project";
             this.lblFooter.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // AdminDashboard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 550);
+            this.ClientSize = new System.Drawing.Size(1067, 677);
             this.Controls.Add(this.pnlMenu);
             this.Controls.Add(this.pnlFooter);
             this.Controls.Add(this.pnlHeader);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.Name = "AdminDashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

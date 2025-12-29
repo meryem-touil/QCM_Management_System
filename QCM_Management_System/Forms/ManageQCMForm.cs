@@ -307,6 +307,27 @@ namespace QCM_Management_System.Forms
             }
         }
 
+        private void btnEditQCM_Click(object sender, EventArgs e)
+        {
+            if (dgvQCMs.SelectedRows.Count == 0)
+            {
+                MessageBox.Show("Please select a QCM to edit", "Info",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+
+            int qcmId = (int)dgvQCMs.SelectedRows[0].Cells["IdQCM"].Value;
+            string currentTitle = dgvQCMs.SelectedRows[0].Cells["Title"].Value.ToString();
+
+            EditQCMForm editForm = new EditQCMForm(qcmId);
+            if (editForm.ShowDialog() == DialogResult.OK)
+            {
+                LoadQCMs(); // Refresh the list
+                MessageBox.Show("QCM updated successfully!", "Success",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
         private void btnRefresh_Click(object sender, EventArgs e)
         {
             LoadQCMs();

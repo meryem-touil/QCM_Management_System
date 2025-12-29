@@ -27,6 +27,11 @@ namespace QCM_Management_System
             ManageQCMForm manageQCMForm = new ManageQCMForm(currentUser);
             manageQCMForm.ShowDialog();
         }
+        private void btnViewResults_Click(object sender, EventArgs e)
+        {
+            AdminViewResultsForm resultsForm = new AdminViewResultsForm(currentUser);
+            resultsForm.ShowDialog();
+        }
 
         private void btnLogout_Click(object sender, EventArgs e)
         {

@@ -380,16 +380,19 @@ namespace QCM_Management_System.Forms
         {
             var userAnswers = new System.Collections.Generic.Dictionary<int, int>();
 
-            string query = "SELECT IdQuestion, IdAnswer FROM UserResponses WHERE IdResult = @IdResult";
+            //string query = "SELECT IdQuestion, IdAnswer FROM UserResponses WHERE IdResult = @IdResult";
+            string query = "SELECT IdQuestion, IdAnswer FROM UserResponses WHERE IdResult = @ResultId AND IdAnswer IS NOT NULL";
             using (SqlCommand cmd = new SqlCommand(query, conn))
             {
-                cmd.Parameters.AddWithValue("@IdResult", resultId);
+                cmd.Parameters.AddWithValue("@ResultId", resultId);
+
                 using (SqlDataReader reader = cmd.ExecuteReader())
                 {
                     while (reader.Read())
                     {
                         int questionId = (int)reader["IdQuestion"];
-                        int answerId = (int)reader["IdAnswer"];
+                        int answerId = (int)reader["IdAnswer"]; // ← Now safe, no NULLs
+
                         userAnswers[questionId] = answerId;
                     }
                 }

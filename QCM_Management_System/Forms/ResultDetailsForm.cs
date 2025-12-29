@@ -128,7 +128,7 @@ namespace QCM_Management_System.Forms
 
                 if (!answered)
                 {
-                    lblStatus.Text = "⚠ Non répondue";
+                    lblStatus.Text = "⚠ No response";
                     lblStatus.ForeColor = Color.Orange;
                 }
                 else if (isCorrect)

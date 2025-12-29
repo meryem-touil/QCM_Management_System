@@ -74,11 +74,23 @@
       <DependentUpon>AdminDashboard.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\AdminDashborad.cs" />
+    <Compile Include="Forms\AdminViewResultsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AdminViewResultsForm.Designer.cs">
+      <DependentUpon>AdminViewResultsForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\CreateQCMForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\CreateQCMForm.Designer.cs">
       <DependentUpon>CreateQCMForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\EditQCMForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\EditQCMForm.Designer.cs">
+      <DependentUpon>EditQCMForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\EditQuestionForm.cs">
       <SubType>Form</SubType>
@@ -146,6 +158,12 @@
     <Compile Include="Utils\SessionManager.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AdminDashboard.resx">
+      <DependentUpon>AdminDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ManageQCMForm.resx">
+      <DependentUpon>ManageQCMForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\RegisterForm.resx">
       <DependentUpon>RegisterForm.cs</DependentUpon>

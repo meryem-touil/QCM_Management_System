@@ -42,12 +42,12 @@
             // 
             this.lblTimer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.lblTimer.AutoSize = true;
-            this.lblTimer.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.lblTimer.ForeColor = System.Drawing.Color.Red;
-            this.lblTimer.Location = new System.Drawing.Point(750, 21);
+            this.lblTimer.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
+            this.lblTimer.ForeColor = System.Drawing.Color.Green; // Changed from Red to Green initially
+            this.lblTimer.Location = new System.Drawing.Point(680, 21);
             this.lblTimer.Name = "lblTimer";
-            this.lblTimer.Size = new System.Drawing.Size(120, 28);
-            this.lblTimer.Text = "Time: 00:00";
+            this.lblTimer.Size = new System.Drawing.Size(190, 32);
+            this.lblTimer.Text = "Time Left: 30:00"; // Changed text
             // 
             // lblQuestionNumber
             // 
@@ -94,7 +94,7 @@
             this.btnPrevious.Location = new System.Drawing.Point(34, 501);
             this.btnPrevious.Name = "btnPrevious";
             this.btnPrevious.Size = new System.Drawing.Size(171, 43);
-            this.btnPrevious.Text = "Previous";
+            this.btnPrevious.Text = "◀ Previous";
             this.btnPrevious.UseVisualStyleBackColor = false;
             this.btnPrevious.Click += new System.EventHandler(this.btnPrevious_Click);
             // 
@@ -107,7 +107,7 @@
             this.btnNext.Location = new System.Drawing.Point(709, 501);
             this.btnNext.Name = "btnNext";
             this.btnNext.Size = new System.Drawing.Size(171, 43);
-            this.btnNext.Text = "Next";
+            this.btnNext.Text = "Next ▶";
             this.btnNext.UseVisualStyleBackColor = false;
             this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
             // 
@@ -129,9 +129,12 @@
             this.Controls.Add(this.lblQuestionText);
             this.Controls.Add(this.lblQuestionNumber);
             this.Controls.Add(this.lblTitle);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "TakeQCMForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Take QCM";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.TakeQCMForm_FormClosing);
             this.Load += new System.EventHandler(this.TakeQCMForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
