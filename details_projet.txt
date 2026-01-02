@@ -1,0 +1,55 @@
+Projet : QCM Management System
+Module : Architecture Client Serveur
+
+====================================
+INFORMATIONS GÉNÉRALES
+====================================
+
+Ce projet est un système de gestion de QCM (Questionnaire à Choix Multiples)
+développé en technologie .NET.
+
+Technologies utilisées :
+- .NET
+- ADO.NET
+- SQL Server
+
+Le projet permet la gestion des questions, des réponses et des utilisateurs
+à travers une architecture client/serveur.
+
+====================================
+STRUCTURE DE LA BASE DE DONNÉES
+====================================
+
+La base de données se trouve dans le dossier :
+Database/
+
+Ce dossier contient deux fichiers SQL :
+
+1) create_database.sql
+   - Ce fichier permet de créer la base de données du projet.
+   - Il doit être exécuté en premier sur SQL Server.
+
+2) create_tables.sql
+   - Ce fichier permet de créer toutes les tables nécessaires au projet
+     (questions, réponses, utilisateurs, etc.).
+   - Il doit être exécuté après la création de la base de données.
+
+====================================
+ORDRE D’EXÉCUTION
+====================================
+
+1. Exécuter le fichier : create_database.sql
+2. Sélectionner la base de données créée
+3. Exécuter le fichier : create_tables.sql
+
+====================================
+INFORMATIONS DU GROUPE
+====================================
+
+Groupe : D4
+Sous-groupe : 5
+
+Membres :
+- Meryem Touil
+- Fatima Azznou
+- Adnan Fikri
